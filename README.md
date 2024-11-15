@@ -44,18 +44,26 @@ Before you start, ensure you have the following installed:
 - **pnpm**: Install globally via:
   ```bash
   npm install -g pnpm
+  ```
 
 ###  Getting Started
 ## 1. Clone the Repository
 ```bash
 git clone https://github.com/Irfan-Ullah-cs/Task-Mangement-System.git
-cd task-manager
+```
 ```bash
+cd task-manager
+```
+
 ## 2. Install Dependencies
+```bash
 pnpm install
-
+```
 ## 3. Start the Development Server
+```bash
 pnpm dev
-
+```
 ## The development server will start, and the application will be available at:
+```bash
 http://localhost:5173
+```

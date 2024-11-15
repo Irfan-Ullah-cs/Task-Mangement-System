@@ -152,3 +152,68 @@ Check the storage space used by dependencies:
 ```bash
 pnpm store usages
 ```
+### Package.json
+## 1. Metadata
+json
+```code
+{
+  "name": "task-manager",
+  "version": "1.0.0"
+}
+```
+name: The name of your project, which should be unique if you intend to publish it to a package registry (like npm). Here, it’s "task-manager". \
+version: Follows Semantic Versioning. "1.0.0" means this is the first stable release of your project.
+## 2. Scripts
+json
+```code
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "start": "vite preview"
+}
+```
+dev: Runs the Vite development server, enabling features like hot module replacement (HMR) for efficient local development. \
+build: Creates an optimized production build of your project in the dist/ folder using Vite. \
+start: Serves the production build locally using Vite’s built-in preview server. Useful for testing the build locally before deployment. \
+These scripts make it easy to run common tasks without having to remember long commands. \
+
+note: it may have other commands like test but this project does not hve testing.
+
+## 3. Dependencies
+json
+```code
+"dependencies": {
+  "axios": "^1.7.7",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-router-dom": "^6.28.0"
+}
+```
+Dependencies are libraries your project needs to run in production. Here’s what each dependency does: \
+
+axios: A popular library for making HTTP requests, useful for fetching or sending data to APIs. \
+react: The core library for building user interfaces.\
+react-dom: Provides DOM-specific methods for React. Essential for rendering React components in the browser. \
+react-router-dom: A library for routing in React applications, allowing navigation between different pages or components. \
+## 4. DevDependencies
+json
+```code
+"devDependencies": {
+  "@types/react": "^18.3.12",
+  "@types/react-dom": "^18.3.1",
+  "@types/react-router-dom": "^5.3.3",
+  "@vitejs/plugin-react": "^4.3.3",
+  "typescript": "^5.6.3",
+  "vite": "^4.5.5"
+}
+```
+DevDependencies are libraries and tools needed only during development (not required in production). Here's what each does:
+
+@types/react, @types/react-dom, @types/react-router-dom:
+
+TypeScript type definitions for React, ReactDOM, and React Router. These ensure type safety and better development experience when using TypeScript with these libraries. \
+@vitejs/plugin-react: A plugin for Vite to support React-specific features like JSX and fast refresh. \
+
+typescript: The TypeScript compiler, enabling type-checking and using .tsx files. \
+
+vite: The build tool and development server for your project.

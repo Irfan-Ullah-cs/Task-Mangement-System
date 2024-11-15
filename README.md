@@ -47,9 +47,10 @@ Before you start, ensure you have the following installed:
 
 ###  Getting Started
 ## 1. Clone the Repository
-git clone <repository_url>
+```bash
+git clone https://github.com/Irfan-Ullah-cs/Task-Mangement-System.git
 cd task-manager
-
+```bash
 ## 2. Install Dependencies
 pnpm install
 

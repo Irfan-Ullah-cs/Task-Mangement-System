@@ -1,128 +1,82 @@
-/* General styling */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f9fff7;
     color: #333;
-}
-
-/* Container for the entire app */
-.app-container {
+  }
+  
+  .app-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
-}
-
-/* Header styling */
-.app-header {
-    background-color: #4a90e2; /* Blue header color */
+  }
+  
+  .app-header {
+    background-color: #6200ea;
     color: white;
     padding: 20px;
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Main layout styling */
-.app-main {
+  }
+  
+  .app-main {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     gap: 20px;
     width: 100%;
     max-width: 800px;
-}
-
-/* Task list and form styling */
-.task-list,
-.task-form {
+  }
+  
+  .task-list,
+  .task-form {
     flex: 1;
     padding: 20px;
-    background: #ffffff; /* White background for sections */
+    background: rgba(221, 221, 221, 0.502);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-/* Titles for list and form */
-.task-list h2,
-.task-form h2 {
+  }
+  
+  .task-list h2,
+  .task-form h2 {
     margin-top: 0;
-    color: #4a90e2; /* Title color */
-    font-size: 1.2rem;
-}
-
-/* Task item styling */
-.task-item {
+  }
+  
+  .task-item {
     list-style: none;
-    background: #e8f0fe; /* Light blue background for tasks */
+    background: #f8eeee;
+   
     padding: 10px;
-    margin-bottom: 10px;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #333;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Removing default list styles */
-.ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Input field styling */
-.task-input {
+  }
+  .ul{
+    margin: 0px;
+    padding: 0px;
+  }
+  .task-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 1rem;
-}
-
-/* Task button styling */
-.task-button {
-    padding: 8px 12px;
-    background-color: #4caf50; /* Green color */
+  }
+  
+  .task-button {
+    width: 10%;
+    padding: 10px;
+    margin-left: 40px;
+    background-color: #016615;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
-}
-
-/* Hover effect for task buttons */
-.task-button:hover {
-    background-color: #388e3c;
-}
-
-/* Special styling for "Complete"/"Undo" buttons */
-.task-item button {
-    padding: 6px 10px;
-    background-color: #007bff; /* Blue button for completion */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-/* Hover effect for complete/undo buttons */
-.task-item button:hover {
-    background-color: #0056b3;
-}
-
-/* Completed task styling */
-.task-item.completed {
-    text-decoration: line-through;
-    color: #777;
-}
+  }
+  
+  .task-button:hover {
+    background-color: #8f9c1a;
+  }
+  

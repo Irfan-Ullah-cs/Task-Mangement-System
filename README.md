@@ -4,35 +4,38 @@ This is a simple **Task Management System** built using modern front-end technol
 
 ---
 
-## Features
+# Technologies Used
 
-- Add and display tasks.
-- Clean and modern design.
-- Responsive layout for all screen sizes.
-- Built using Vite, React, and TypeScript for a seamless developer experience.
+## 1. React
+- A JavaScript library for building dynamic user interfaces.
+- Provides a component-based structure for creating reusable UI elements.
 
----
+## 2. TypeScript
+- A typed superset of JavaScript for safer and more predictable code.
+- Offers static type checking and better error detection during development.
 
-## Technologies Used
+## 3. Vite
+- A fast and modern development server and build tool.
+- Features hot module replacement (HMR) for instant updates and optimized production builds.
 
-### 1. **React**
-   - A JavaScript library for building user interfaces.
-   - Provides the component-based structure for building reusable UI elements.
+### Common Vite Commands:
+- Start development server: `pnpm dev`
+- Build for production: `pnpm build`
+- Preview production build: `pnpm preview`
 
-### 2. **TypeScript**
-   - A typed superset of JavaScript.
-   - Enhances development with static type checking and better error detection.
+## 4. pnpm
+- A high-performance package manager for Node.js with disk space optimization.
+- Links dependencies instead of duplicating them, making installations faster and saving disk space.
 
-### 3. **Vite**
-   - A modern build tool and development server.
-   - Offers fast builds, hot module replacement (HMR), and optimized bundles.
+### Common pnpm Commands:
+- Install dependencies: `pnpm install`
+- Add a new package: `pnpm add <package-name>`
+- Remove a package: `pnpm remove <package-name>`
 
-### 4. **pnpm**
-   - A performant package manager for Node.js.
-   - Ensures efficient dependency management with disk space optimization.
+## 5. CSS
+- Styles the application to provide a clean, modern, and visually appealing design.
 
-### 5. **CSS**
-   - Used to style the application with a clean and modern design.
+
 
 ---
 
@@ -52,7 +55,7 @@ Before you start, ensure you have the following installed:
 git clone https://github.com/Irfan-Ullah-cs/Task-Mangement-System.git
 ```
 ```bash
-cd task-manager
+cd Task-Mangement-System
 ```
 
 ## 2. Install Dependencies
@@ -66,4 +69,86 @@ pnpm dev
 ## The development server will start, and the application will be available at:
 ```bash
 http://localhost:5173
+```
+
+#### Other Useful Commands for pnpm
+
+## 1. Install a New Dependency
+Add a specific package to your project:
+
+```bash
+pnpm add <package-name>
+```
+## Add a specific package as a development dependency:
+
+```bash
+pnpm add <package-name> --save-dev
+```
+## 2. Remove a Dependency
+```bash
+pnpm remove <package-name>
+```
+## 3. Update Dependencies
+```bash
+pnpm update
+```
+## 4. Run Scripts
+Run any script defined in your package.json file:
+
+```bash
+pnpm run <script-name>
+```
+## Example: Run the build script.
+
+```bash
+pnpm run build
+```
+## Testing Command
+Run tests with the following command (if tests are configured):
+
+```bash
+pnpm test
+```
+## 5. List Installed Dependencies
+View all installed packages and their versions:
+
+```bash
+pnpm list
+```
+## 6. Audit for Vulnerabilities
+Check for vulnerabilities in your dependencies:
+
+```bash
+pnpm audit
+```
+## 7. Clean Cache
+Clear the pnpm cache:
+
+```bash
+pnpm store prune
+```
+## 8. Create a Lockfile
+Generate or update the pnpm-lock.yaml file to ensure consistent installs:
+
+```bash
+pnpm install --lockfile-only
+```
+## 9. Run in Recursive Mode
+Run commands for multiple projects in a monorepo:
+
+```bash
+pnpm recursive install
+```
+## 10. Build and Test Packages
+Run build or test scripts for all packages in a monorepo:
+
+```bash
+pnpm recursive build
+pnpm recursive test
+```
+## 11. View Disk Space Used by Dependencies
+Check the storage space used by dependencies:
+
+```bash
+pnpm store usages
 ```
